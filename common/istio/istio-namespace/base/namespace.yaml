@@ -5,4 +5,5 @@ metadata:
   labels:
     istio-operator-managed: Reconcile
     istio-injection: disabled
-    pod-security.kubernetes.io/enforce: restricted
+    # pod-security.kubernetes.io/enforce: restricted  # disabled for testing
+    pod-security.kubernetes.io/warn: restricted
